@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ja tsön</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-pink: #f8e7e7;
+            --color-red: #e63946;
+            --color-brown: #2b1810;
+            --text-dark: #1c1c1c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-pink);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header Styles */
+        .header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 7rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 2rem;
+            color: var(--color-red);
+            font-weight: 400;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        /* Story Section */
+        .story {
+            padding: 8rem 0;
+            text-align: center;
+        }
+
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 8rem 0;
+        }
+
+        .section-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 5rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            font-weight: 400;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6rem;
+        }
+
+        .course {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .chef-info {
+            text-align: left;
+        }
+
+        .chef-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        .chef-name {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .dish-info {
+            position: relative;
+        }
+
+        .course-title {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-red);
+        }
+
+        .course-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .course-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 8rem 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Navigation */
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+        }
+
+        .nav a {
+            color: var(--text-dark);
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid transparent;
+        }
+
+        .nav a:hover {
+            border-bottom-color: var(--color-red);
+        }
+
+        @media (max-width: 1024px) {
+            .course {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 4rem;
+            }
+            
+            .section-title {
+                font-size: 3rem;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">ཇ་མཚོན</h1>
+        <p class="subtitle">ja tsön, a sensory journey through darkness</p>
+        <p class="subtitle">Nov 27, 2024</p>
+        <nav class="nav">
+            <a href="#story">Our Story</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+        </nav>
+    </header>
+
+    <section id="story" class="story">
+        <div class="container">
+            <div class="story-content">
+                <p>In Tibetan, ja tsön means "rainbow" — a spectrum of colors we cannot see in darkness, but can feel through taste. Here, we invite you to dine in complete darkness, allowing your other senses to guide you through a journey of flavors, textures, and emotions. Each dish tells a story of connection, each bite creates a moment of pure sensory exploration.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Menu</h2>
+            <div class="menu-grid">
+                <!-- Course 1 -->
+                <article class="course">
+                    <div class="chef-info">
+                        <img src="/Users/yan/Desktop/jats-n/chef/hony.png" alt="Chef Hony X" class="chef-img">
+                        <h3 class="chef-name">Hony X</h3>
+                    </div>
+                    <div class="dish-info">
+                        <h4 class="course-title">东方定助/ Higashikata Josuke</h4>
+                        <p class="course-description">四蛋多power</p>
+                        <!-- <img src="/api/placeholder/600/400" alt="First Course" class="course-img" onclick="playMusic('course1')"> -->
+                    </div>
+                </article>
+
+                <!-- Repeat similar structure for other 5 courses -->
+                 <!-- Course 1 -->
+                <article class="course">
+                    <div class="chef-info">
+                        <img src="/Users/yan/Desktop/jats-n/chef/yan.png" alt="Chef Yan F" class="chef-img">
+                        <h3 class="chef-name">Yan F</h3>
+                    </div>
+                    <div class="dish-info">
+                        <h4 class="course-title">常回家看看/ Rebirth</h4>
+                        <p class="course-description">食物回到肠胃的温暖，就像游子虽四海为家，但有朋自有家</p>
+                        <!--<img src="/api/placeholder/600/400" alt="First Course" class="course-img" onclick="playMusic('course1')">-->
+                    </div>
+                </article>
+
+                <!-- Repeat similar structure for other 5 courses -->
+                 <!-- Course 1 -->
+                <article class="course">
+                    <div class="chef-info">
+                        <img src="/Users/yan/Desktop/jats-n/chef/jackson.png" alt="Chef Jackson X" class="chef-img">
+                        <h3 class="chef-name">Jackson X</h3>
+                    </div>
+                    <div class="dish-info">
+                        <h4 class="course-title">含苞待放/ Melted Ocean</h4>
+                        <p class="course-description">用爱把食材感化成爱的样子。With love, transform ingredients into the very essence of love itself.</p>
+                        <!--<img src="/api/placeholder/600/400" alt="First Course" class="course-img" onclick="playMusic('course1')">-->
+                    </div>
+                </article>
+
+                <!-- Repeat similar structure for other 5 courses -->
+                 <!-- Course 1 -->
+                <article class="course">
+                    <div class="chef-info">
+                        <img src="/Users/yan/Desktop/jats-n/chef/chuyue.png" alt="Chef Chuyue Z" class="chef-img">
+                        <h3 class="chef-name">Chuyue Z</h3>
+                    </div>
+                    <div class="dish-info">
+                        <h4 class="course-title">天外来客 之 天下无敌</h4>
+                        <p class="course-description">刘姥姥出使三体人</p>
+                        <!--<img src="/api/placeholder/600/400" alt="First Course" class="course-img" onclick="playMusic('course1')">-->
+                    </div>
+                </article>
+
+                <!-- Repeat similar structure for other 5 courses -->
+                <!-- Course 1 -->
+                <article class="course">
+                    <div class="chef-info">
+                        <img src="/Users/yan/Desktop/jats-n/chef/chuyue.png" alt="Chef Chuyue Z" class="chef-img">
+                        <h3 class="chef-name">Chuyue Z</h3>
+                    </div>
+                    <div class="dish-info">
+                        <h4 class="course-title">天外来客 之 天上来敌</h4>
+                        <p class="course-description">甜蜜蜜的礼物</p>
+                        <!-- <img src="/api/placeholder/600/400" alt="First Course" class="course-img" onclick="playMusic('course1')">-->
+                    </div>
+                </article>
+
+                <!-- Repeat similar structure for other 5 courses -->
+                 <!-- Course 1 -->
+                <article class="course">
+                    <div class="chef-info">
+                        <img src="/Users/yan/Desktop/jats-n/chef/yan.png" alt="Chef Yan F" class="chef-img">
+                        <h3 class="chef-name">Yan F</h3>
+                    </div>
+                    <div class="dish-info">
+                        <h4 class="course-title">青青草原/ Prairie</h4>
+                        <p class="course-description">大家一起喜羊羊。together, we love.</p>
+                        <!--<img src="/api/placeholder/600/400" alt="First Course" class="course-img" onclick="playMusic('course1')">-->
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <div class="gallery-grid">
+                <img src="/Users/yan/Desktop/jats-n/chef/axe_1.jpeg" alt="Gallery 1" class="gallery-img">
+                <img src="/Users/yan/Desktop/jats-n/chef/axe_2.jpeg" alt="Gallery 2" class="gallery-img">
+                <img src="/Users/yan/Desktop/jats-n/chef/shoot.jpeg" alt="Gallery 3" class="gallery-img">
+                <!-- Add more gallery images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function playMusic(courseId) {
+            console.log(`Playing music for ${courseId}`);
+        }
+    </script>
+</body>
+</html>
